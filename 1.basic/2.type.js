@@ -82,7 +82,7 @@ console.log(typeof val) // number
 
 console.log(Number('1'), Number(true)) // 1 1
 console.log(Number(' '), Number(''), Number(null), Number(false)) // 0 0 0 0
-console.log(Number('a'), Number(undefined)) // NaN NaN
+console.log(Number('a'), Number(undefined), Number(NaN)) // NaN NaN NaN
 
 console.log(Boolean(-1), Boolean('a'), Boolean('0'), Boolean(' ')) // true true true true
 console.log(Boolean(0), Boolean(''), Boolean(null), Boolean(undefined), Boolean(NaN))  // false false false false false
