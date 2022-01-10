@@ -1,4 +1,4 @@
 // global scope
 let a
-a = 'hello'
-a = 'bye'
+a = 1
+a = 2

@@ -1,13 +1,13 @@
-let msg = 'earth'
+let a = 1
 // let msg // SyntaxError: Identifier 'msg' has already been declared
 
 {
-    console.log(msg) // earth
+    console.log(a) // 1
 }
 
 { // local scope
-    let msg = 'moon'
-    console.log(msg) // moon
+    let a = 2
+    console.log(a) // 2
 }
 
-console.log(msg) // earth
+console.log(a) // 1
