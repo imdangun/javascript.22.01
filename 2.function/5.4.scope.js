@@ -13,5 +13,5 @@ const sayHello = function() {
     console.log('Hello,', name)
 }
 
+sayHi()    // Hi, neo
 sayHello() // Hello, neo
-sayHi()
