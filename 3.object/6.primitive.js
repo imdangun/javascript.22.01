@@ -26,6 +26,11 @@ console.log(user > user2) // false
 console.log(user + 50)    // 70
 console.log(user2 + 50)   // 88
 
+/* object -> primitive 시도 순서
+1. object[Symbol.toPrimitive](hint) 를 호출한다.
+2. 위 메서드가 없고, hint 가 string 이면, toString() || toValueOf 중 하나를 호출한다.
+3. 위 메서드가 없고, hint 가 number || default 이면, toValueOf() || toString() 중 하나를 호출한다.
+*/
 //
 user = {
     name: 'neo',
