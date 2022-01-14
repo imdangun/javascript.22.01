@@ -1,5 +1,5 @@
 class User {
-    constructor(name) {
+    constructor(name) {       
         this.name = name
     }
 
@@ -28,30 +28,6 @@ User = class {
 }
 
 new User('abel', 12).introduce() // abel / 12
-
-//
-User = class {   
-    _age   
-
-    set age(age) {
-        if(age >= 10) this._age = age
-        else this._age = 0
-    }
-   
-    get age() {
-        return this._age + ' (get)'
-    }
-}
-
-user = new User()
-user._age = 9
-console.log(user._age) // 9
-
-user = new User()
-user.age = 11
-console.log(user.age) // 11 (get)
-user.age = 9
-console.log(user.age) // 0 (get)
 
 //
 function makeClass(phrase) {
