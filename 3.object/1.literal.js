@@ -9,7 +9,7 @@ let user = {
 user = {
     name: {
         first: 'bob',
-        lsat: 'smith'
+        last: 'smith'
     },
     'nick name': 'tiger face',
     age: 13,
@@ -19,7 +19,7 @@ user = {
 
 
 /** read property */
-console.log(user.name) // { first: 'bob', lsat: 'smith' }
+console.log(user.name) // { first: 'bob', last: 'smith' }
 console.log(user.name.first) // bob   /* chaining */
 user.sing() // lala
 
