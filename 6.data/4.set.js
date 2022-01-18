@@ -22,7 +22,7 @@ for(let user of set) console.log(user)
 // { name: 'pete' }
 // { name: 'john' }
 
-set.forEach((val) => console.log(val))
+set.forEach((val1) => console.log(val))
 // { name: 'pete' }
 // { name: 'john' }
 

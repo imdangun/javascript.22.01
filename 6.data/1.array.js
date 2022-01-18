@@ -143,6 +143,11 @@ arr.forEach(print3)
 console.log(arr) // [ 'A', 'B' ]
 
 //
+arr = [1, 2, 3]
+let arr2 = arr.map(e => e * 2)
+console.log(arr, arr2) // [ 1, 2, 3 ] [ 2, 4, 6 ]
+
+//
 let group = {
     title: 'art',
     students: ['winston', 'cal', 'maritha'],
