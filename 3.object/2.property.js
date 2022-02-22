@@ -57,6 +57,8 @@ let street
 // street = user.city.street // TypeError: Cannot read properties of undefined (reading 'street')
 street = user?.city?.street
 console.log(street)  // undefined
+street = user?.city?.street ?? 'where' // ?? nullish coalescing operator
+console.log(street) // where
 // user?.address = 'sejong' // SyntaxError: Invalid left-hand side in assignment
 
 //
