@@ -185,3 +185,36 @@ console.log(str, '/', typeof str) // 1,2,3 / string
 //
 str = JSON.stringify(arr)
 console.log(str, '/', typeof str) // [1,2,3] / string
+
+
+/** method */
+// find()
+const items = [
+    {itemName: 'book', price: 1},
+    {itemName: 'computer', price: 100},
+    {itemName: 'book', price: 2}
+]
+
+const item = items.find(item => item.itemName == 'book')
+console.log(item)
+
+// filter()
+const interest = items.filter((item, i) => item.itemName == 'book')
+console.log(interest)
+
+// map()
+const elements = items.map((item, i) => 
+    `<div>${item.itemName}: ${item.price}</div>`)
+console.log(elements)
+
+// reduce()
+const totalPrice = items.reduce((total, item) => {
+        total += item.price
+        return total
+    }, 0) // total = 0
+console.log(totalPrice)
+
+// some(), every()
+let isExist = items.some(item => item.itemName == 'book')
+isExist = items.every(item => item.itemName == 'book')
+console.log(isExist)
